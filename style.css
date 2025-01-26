@@ -18,7 +18,7 @@
 }
 
 body {
-    max-width: 100%;
+    width: 100%;
     min-height: 100vh;
 }
 
@@ -26,9 +26,45 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+   
 }
 
 nav ul {
     display: flex;
     gap: 2rem;
+}
+
+button {
+    background-color: var(--button-color);
+    width: 130px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.easy {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: start;
+}
+
+.firstsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.introimg {
+    width: 50%;
+}
+
+.introimg img {
+    width: 100%;
+}
+
+/* SECOND SECTION */
+
+.alltogether {
+    display: flex;
 }
