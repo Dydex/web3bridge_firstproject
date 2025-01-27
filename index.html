@@ -18,18 +18,22 @@
 
     <div>
       <nav>
-        <ul>
-            <a>Home</a>
-            <a>About</a>
-            <a>Contact</a>
-            <a>Blog</a>
-            <a>Careers</a>
+        <div class="navbar">
+          <span id="toggle-positive" onclick=showBar()> <img  src="images/icon-hamburger.svg"> </span>
+          <span id="toggle-negative" onclick=closeBar()> <img src="images/icon-close.svg"> </span>
+        </div>
+        <ul class="bar">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+            <span>Blog</span>
+            <span>Careers</span>
         </ul>
       </nav>
     </div>
    
     <div class="firstbutton">
-      <button>Request Invite </button>
+      <button class="hideonmible">Request Invite </button>
     </div> 
   </header>
     
@@ -210,5 +214,6 @@
       
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

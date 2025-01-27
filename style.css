@@ -36,6 +36,25 @@ nav ul {
     gap: 2rem;
 }
 
+.bar {
+    margin-top: 4rem;
+    border-radius: 0.3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 40%;
+    z-index: 999;
+    background-color: var(--background-color-tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar span {
+    width: 100%;
+}
+
 button {
     background-color: var(--button-color);
     width: 130px;
@@ -212,6 +231,10 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+    .hideonmible {
+        display: none;
+    }
+
     .firstsection {
         display: flex;
         flex-direction: column-reverse;
@@ -230,5 +253,15 @@ footer p {
     #footer {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .bar {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
     }
 }
