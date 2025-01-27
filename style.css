@@ -9,8 +9,9 @@
     --primary-color-brightcyan: hsl(192, 70%, 51%);
 
     /* Background colors */
-    --background-color-primary: hsl(220, 16%, 96%);
-    --background-color-secondary: hsl(233, 8%, 62%);
+    --background-color-primary:  hsl(0, 0%, 98%);
+    --background-color-secondary:hsl(220, 16%, 96%);
+    --background-color-tertiary: hsl(0, 0%, 100%);
 
     /* Text colors */
     --text-color-primary: hsl(0, 0%, 100%);
@@ -20,13 +21,14 @@
 body {
     width: 100%;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+    background-color: var(--background-color-tertiary);
 }
 
 nav ul {
@@ -39,6 +41,7 @@ button {
     width: 130px;
     height: 35px;
     border-radius: 20px;
+    color: var(--text-color-primary);
 }
 
 .easy {
@@ -48,11 +51,20 @@ button {
     align-items: start;
 }
 
+.easy p {
+    margin-top: 0;
+}
+
+.easy button {
+    margin-top: 1rem;
+} 
+
 .firstsection {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: var(--background-color-primary);
 }
 
 .introimg {
@@ -65,6 +77,158 @@ button {
 
 /* SECOND SECTION */
 
+.secondsection {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--background-color-secondary);
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+}
+
+.choose p {
+    margin-top: 0;
+}
+
 .alltogether {
     display: flex;
+    gap: 50px;
+    justify-content: center;   
+}
+
+/* THIRD SECTION */
+
+.thirdsection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color-primary);
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.article {
+    display: flex;
+    margin-left: 8rem;
+}
+
+.pictures {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+}
+
+.pictures img {
+    width: 100%;
+    height: 30vh;
+}
+
+.picimg {
+    width: 100%;
+    height: 30vh;
+}
+
+.claire {
+    width: 19%;
+    background-color: red;
+}
+
+
+.wilson {
+    width: 19%;
+    background-color: var(--background-color-tertiary);
+}
+
+.wilson2 {
+    width: 19%;
+    background-color: var(--background-color-tertiary);
+}
+
+.claire2 {
+    width: 19%;
+    background-color: var(--background-color-tertiary);
+}
+
+.small {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.small p {
+    margin-bottom: 0;
+} 
+
+.small h4 {
+    margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: var(--footer-color);
+    padding-top: 2rem;
+}
+
+footer p {
+    color: var(--text-color-primary);
+}
+
+.footerone {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 8rem;
+    gap: 3.5rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav {
+    display: flex;
+    gap: 7rem;
+    width: 25%;
+}
+
+.last {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 36.5%;
+}
+
+#footer {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+    .firstsection {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .alltogether {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pictures {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
